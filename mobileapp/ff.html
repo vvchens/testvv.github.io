@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0152)https://staging.v8.palottery.state.pa.us/mobileapp/age-gate.aspx?iLotteryReturnUrl=https://staging.v8.palottery.state.pa.us/mobileapp/instant-games.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="expires" content="-1">
+	<!-- Google Tag Manager -->
+	<script type="text/javascript" async="" src="./PA Lottery_files/ga.js"></script><script type="text/javascript" async="" src="./PA Lottery_files/kochava.min.js"></script><script type="text/javascript" async="" src="./PA Lottery_files/analytics.js"></script><script type="text/javascript" async="" src="./PA Lottery_files/analytics.js"></script><script async="" src="./PA Lottery_files/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CCC73Q');</script>
+	<!-- End Google Tag Manager -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./PA Lottery_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3428891-7');
+</script>
+
+    <title>
+	PA Lottery
+</title><meta name="description" content="PA Lottery Mobile App"><meta name="viewport" content="width=device-width"><meta http-equiv="cleartype" content="on"><meta name="format-detection" content="telephone=no"><link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://staging.v8.palottery.state.pa.us/mobileapp/img/touch/apple-touch-icon-144x144-precomposed.png"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://staging.v8.palottery.state.pa.us/mobileapp/img/touch/apple-touch-icon-114x114-precomposed.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://staging.v8.palottery.state.pa.us/mobileapp/img/touch/apple-touch-icon-72x72-precomposed.png"><link rel="apple-touch-icon-precomposed" href="https://staging.v8.palottery.state.pa.us/mobileapp/img/touch/apple-touch-icon-57x57-precomposed.png"><link rel="shortcut icon" sizes="196x196" href="https://staging.v8.palottery.state.pa.us/mobileapp/img/touch/touch-icon-196x196.png"><link rel="shortcut icon" href="https://staging.v8.palottery.state.pa.us/mobileapp/img/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png"><meta name="msapplication-TileColor" content="#222222">
+
+    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+    <!--
+        <link rel="canonical" href="http://www.example.com/" />
+        -->
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <!--
+        <meta name="mobile-web-app-capable" content="yes" />
+        -->
+
+    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+    <!--
+        <meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="black" /><meta name="apple-mobile-web-app-title" /><meta name="format-detection" content="telephone=no" />
+        -->
+
+    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+    <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+    <link rel="stylesheet" href="./PA Lottery_files/normalize.css"><link rel="stylesheet" href="./PA Lottery_files/main.css">
+    <script src="./PA Lottery_files/modernizr-2.7.1.min.js"></script>
+    <script src="./PA Lottery_files/jquery-2.1.0.min.js"></script>
+    
+    <style type="text/css">
+        .customError
+        {
+            color:#f00;
+        }
+        .yellow
+        {
+            width:90%;
+            border: 2px solid #e24e55;
+            background-color:#faf9b2;
+            margin: 0 auto;
+        }
+            .yellow h2
+            {
+                text-align:center;
+                font-size:28px;
+                margin: 6% auto 4% auto;
+            }
+        .ageCheck {
+            display:none;
+        }
+        .redBtn{float:none;overflow:hidden;margin:8% auto;padding:20px 44px;border-style:none;display:inline-block;font-size:20px;color:#fff;font-weight:normal;-webkit-box-shadow:0 1px 2px #757554;box-shadow:0 1px 2px #757554;text-shadow:0 2px 1px #6a6a6a;max-width:200px;text-align:center;background:#e11f26;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxMWYyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iI2UwMWYyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2QyMWYyNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg1JSIgc3RvcC1jb2xvcj0iI2FlMWUyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhMzFlMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-moz-linear-gradient(top,#e11f26 0,#e01f26 36%,#d21f25 53%,#ae1e23 85%,#a31e22 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#e11f26),color-stop(36%,#e01f26),color-stop(53%,#d21f25),color-stop(85%,#ae1e23),color-stop(100%,#a31e22));background:-webkit-linear-gradient(top,#e11f26 0,#e01f26 36%,#d21f25 53%,#ae1e23 85%,#a31e22 100%);background:-o-linear-gradient(top,#e11f26 0,#e01f26 36%,#d21f25 53%,#ae1e23 85%,#a31e22 100%);background:-ms-linear-gradient(top,#e11f26 0,#e01f26 36%,#d21f25 53%,#ae1e23 85%,#a31e22 100%);background:linear-gradient(to bottom,#e11f26 0,#e01f26 36%,#d21f25 53%,#ae1e23 85%,#a31e22 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e11f26',endColorstr='#a31e22',GradientType=0)}
+        
+    </style>
+    <script src="./PA Lottery_files/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#ageCheckToggle').click(function () {
+                var currentSrc = $(this).find('img').attr('src');
+                if (currentSrc.indexOf('-off') > -1) {
+                    $('.ageCheck input').attr('checked', true);
+                    $(this).find('img').attr('src',currentSrc.replace('-off','-on'));
+                } else {
+                    $('.ageCheck input').attr('checked', false);
+                    $(this).find('img').attr('src', currentSrc.replace('-on', '-off'));
+                }
+                return false;
+            });
+
+        });
+    </script>
+
+	
+	<!-- Kochava -->
+<script>
+!function(a,b,c,d,e){var f=window.kochava=window.kochava||[];if(f.loaded)return void(window.console&&console.error&&console.error("Kochava snippet already included"));f.loaded=!0,f.methods=["page","identify","activity","conversion","init"],stub=function(a){return function(){var b=Array.prototype.slice.call(arguments);return b.unshift(a),f.push(b),f}};for(var g=0;g<f.methods.length;g++){var h=f.methods[g];f[h]=stub(h)}f.init((new Date).getTime(),a,e),function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"assets.kochava.com/kochava.js/"+b+"/kochava.min.js",d||(a.src=a.src+"?c="+Math.random());var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)}(),c&&f.page()
+}("kopa-lottery-test-4519fjh","v1",true,true,false);
+</script>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CCC73Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <form method="post" action="https://staging.v8.palottery.state.pa.us/mobileapp/age-gate.aspx?iLotteryReturnUrl=https%3a%2f%2fstaging.v8.palottery.state.pa.us%2fmobileapp%2finstant-games.aspx" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="tBE/qLFqJyo5hvWxCNFieWqecMBVUbUw3gJ8LrUYhguSl0JMbkMPV9q6lM7ZuZfnKHZAmy7/Ajqh4XFRN+lrv4Bb001VU8OXrZnkFSmS/ijSWzbHdkD33uAIL0gTkSov/gGomuYo+tdZjT+v7Lrn3mKUTyzaUtC2D82peSmqLhXDmVDUCmwysJR1gTLgPbON7QlzXQ==">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="606C7315">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="s9H5Xc8cT2+GkDXtpfna6ortvg39w5PISLdXnmjpaGerj3u7sfDb7CTzEUb7ZUTeDgRLRTh6KhqZtuAf4tbweLpZ6M4YveDHZeKUmVq2eeCf4P76ZYTiQtT8FfBJyu7cROjrTUKzoU6b2yb5SNA0VzcqOpI=">
+</div>
+        
+        <div style="display:none;width: 85%; font-size: .5em;">https://staging.v8.palottery.state.pa.us/mobileapp/age-gate.aspx?ilotteryreturnurl=https://staging.v8.palottery.state.pa.us/mobileapp/instant-games.aspx&nbsp;—&nbsp;D2B2437BB97080599F1B852AF80B9545</div>
+        
+        <div>
+            
+    <div id="main" style="background-color: #fff;">
+        <div class="white-inset" style="width: 100%;margin: 0% auto;">
+            <div>
+                <img src="./PA Lottery_files/app-gate-logo.jpg" style="width:100%; margin: 10% 0 7% 0;">
+                <span id="ctl00_ContentPlaceHolder1_errorMsg" class="customError"></span>
+                <div class="yellow">
+                    <h2>Age Verification</h2>
+                    <p style="margin:0;font-size: 12px;">
+                        <span class="ageCheck"><input id="ctl00_ContentPlaceHolder1_ageCheck" type="checkbox" name="ctl00$ContentPlaceHolder1$ageCheck"></span>
+                        <a id="ageCheckToggle" href="https://staging.v8.palottery.state.pa.us/mobileapp/age-gate.aspx?iLotteryReturnUrl=https://staging.v8.palottery.state.pa.us/mobileapp/instant-games.aspx#"><img src="./PA Lottery_files/chk-off.png" alt="Check"></a>
+                        &nbsp;
+                        I certify that I am 18 years or older*
+                    </p>
+                    <p style="padding: 2% 0 10% 0;font-size: 16px;margin: 0;">*Must be 18 or older to use this app. </p>
+                </div>
+                <div align="center">
+                <input type="submit" name="ctl00$ContentPlaceHolder1$Button1" value="Continue" id="ctl00_ContentPlaceHolder1_Button1" class="redBtn">
+                </div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </form>
+    
+    <script src="./PA Lottery_files/helper.js"></script>
+    <script src="./PA Lottery_files/plugins.js"></script>
+
+    
+
+    <script src="./PA Lottery_files/main.js"></script>
+
+
+</body></html>
