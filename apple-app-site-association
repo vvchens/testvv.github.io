@@ -3,10 +3,6 @@
         "apps": [],
         "details": [
             {
-                "appID": "teamID.bundleId”,
-                "paths": ["/deaplink","/wwdc/news/","*"]
-            },
-            {
                 "appID": "LQ6RFS97ZY.com.scientificgames.palottery.test",
                 "paths": [ "*" ]
             }
