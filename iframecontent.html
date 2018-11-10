@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <script>
+function mdiGetScreenWidth(){
+
+var win = typeof window != 'undefined' && window;
+var doc = typeof document != 'undefined' && document
+var docElem = doc && doc.documentElement;
+var a = docElem['clientWidth'], b = win['innerWidth'];
+return a < b ? b : a;
+} 
+        document.write(mdiGetScreenWidth());</script>
+    <div style="width:100px">1</div>
+</body>
+</html>
