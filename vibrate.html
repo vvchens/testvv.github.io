@@ -1,5 +1,5 @@
 <script>
-  window.addEventListener( "load", function() {
+  document.addEventListener('deviceready',function() {
     if ("vibrate" in navigator) {
       console.log("Nav Vibrate");
       navigator.vibrate( 1000 );
