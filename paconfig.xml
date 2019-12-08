@@ -3,12 +3,6 @@
 
     <configUri>https://vvchens.github.io/paconfig.xml</configUri>
 
-        <environments>
-        <configUri title="DEV">http://config.mdiidev.com/pa_native/dev/config-v3.xml</configUri>
-        <configUri title="QA" default="true">http://config.mdiidev.com/pa_native/qa/config-v3.xml</configUri>
-        <configUri title="UAT-MARC">http://config.mdiidev.com/pa_native/uatmarc/config-v3.xml</configUri>
-        <configUri title="PROD">http://config.mdiidev.com/pa_native/prod/config-v3.xml</configUri>
-    </environments>
 
     <minimumUpdateInterval>0</minimumUpdateInterval>
 
@@ -35,7 +29,7 @@
 
     <opsDialogShowTime>300</opsDialogShowTime>
 
-    <imagesFolderUri>http://config.mdiidev.com/pa_native/uat</imagesFolderUri>
+    <imagesFolderUri>https://vvchens.github.io/</imagesFolderUri>
 
     <menu version="2">
 
