@@ -5,6 +5,14 @@
             {
                 "appID": "LQ6RFS97ZY.com.scientificgames.palottery.test",
                 "paths": [ "/mobileapp/*" ]
+            },
+            {
+                "appID": "LQ6RFS97ZY.com.scientificgames.palottery.uat",
+                "paths": [ "/mobileapp/*" ]
+            },
+            {
+                "appID": "LQ6RFS97ZY.com.scientificgames.palottery",
+                "paths": [ "/mobileapp/*" ]
             }
         ]
     }
