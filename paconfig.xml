@@ -156,7 +156,7 @@
 <!--                        <label><![CDATA[Wizard of Oz]]></label>-->
 <!--                        <linkUri>https://pa2.uat.secondchancebonuszone.com/thewizardofoz2019/enter/index.php#promotop</linkUri>-->
 <!--                    </item>-->
-                    <!--item>
+                    <item>
                         <label>ePlayslip</label>
                         <icon>menu/eplayslip.png</icon>
                         <menu>
@@ -182,7 +182,7 @@
                                 </menuItems>
                             </leftArea>
                         </menu>
-                    </item-->
+                    </item>
                     <item>
                         <label>Connect With Us</label>
                         <icon>menu/connectwithus.png</icon>
