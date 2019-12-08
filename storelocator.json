@@ -1,0 +1,74 @@
+[
+    {
+        "Lat": 34,
+        "Lng": -83, 
+        "Id": 11, 
+        "Name": "Retailer's Store Name 1", 
+        "Address": "1500 Blurgrass, City1", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 34,
+        "Lng": -82, 
+        "Id": 22, 
+        "Name": "Retailer's Store Name 2", 
+        "Address": "1500 Blurgrass, City2", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 34,
+        "Lng": -84, 
+        "Id": 33, 
+        "Name": "Retailer's Store Name 3", 
+        "Address": "1500 Blurgrass, City3", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 33,
+        "Lng": -83, 
+        "Id": 44, 
+        "Name": "Retailer's Store Name 4", 
+        "Address": "1500 Blurgrass, City4", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 33,
+        "Lng": -82, 
+        "Id": 55, 
+        "Name": "Retailer's Store Name 5", 
+        "Address": "1500 Blurgrass, City5", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 33,
+        "Lng": -84, 
+        "Id": 66, 
+        "Name": "Retailer's Store Name 6", 
+        "Address": "1500 Blurgrass, City6", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 35,
+        "Lng": -83, 
+        "Id": 77, 
+        "Name": "Retailer's Store Name 7", 
+        "Address": "1500 Blurgrass, City7", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 35,
+        "Lng": -82, 
+        "Id": 88, 
+        "Name": "Retailer's Store Name 8", 
+        "Address": "1500 Blurgrass, City8", 
+        "IsDrawable": true
+    },
+    {
+        "Lat": 35,
+        "Lng": -84, 
+        "Id": 99, 
+        "Name": "Retailer's Store Name 9", 
+        "Address": "1500 Blurgrass, City9", 
+        "IsDrawable": true
+    }
+]

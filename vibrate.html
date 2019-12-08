@@ -1,0 +1,13 @@
+<script>
+  document.addEventListener('deviceready',function() {
+    if ("vibrate" in navigator) {
+      console.log("Nav Vibrate");
+      navigator.vibrate( 1000 );
+    }
+    else if ( window.cordova )
+    {
+      console.log("Cordova vibrate");
+      window.cordova.exec( null, null, "Vibration", "vibrate", [] );
+    }
+  });
+</script>
