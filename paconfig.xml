@@ -506,13 +506,13 @@
             <!-- <realm>www.palottery.beta.state.pa.us</realm> -->
             <loginBaseUri><![CDATA[http://www.palottery.beta.state.pa.us/mobileapp/vip-login.aspx]]></loginBaseUri>
             <loginParams>
-                <param name="ctl00$ContentPlaceHolder1$Username"/>
-                <param name="ctl00$ContentPlaceHolder1$Password"/>
-                <param name="remember_login"/>
-                <param name="__VIEWSTATE" prefetch="true" startMarker='id="__VIEWSTATE" value="' endMarker='"' />
-                <param name="__VIEWSTATEGENERATOR" prefetch="true" startMarker='id="__VIEWSTATEGENERATOR" value="' endMarker='"' />
-                <param name="__EVENTVALIDATION" prefetch="true" startMarker='id="__EVENTVALIDATION" value="' endMarker='"' />
-                <param name="ctl00$ContentPlaceHolder1$Button1" prefetch="true" startMarker='id="ctl00$ContentPlaceHolder1$Button1" value="' endMarker='"' />
+                <param name="ctl00$ContentPlaceHolder1$Username" />
+                <param name="ctl00$ContentPlaceHolder1$Password" />
+                <param name="remember_login" />
+                <param name="__VIEWSTATE" prefetch="true" startMarker="id=&quot;__VIEWSTATE&quot; value=&quot;" endMarker="&quot;" />
+                <param name="__VIEWSTATEGENERATOR" prefetch="true" startMarker="id=&quot;__VIEWSTATEGENERATOR&quot; value=&quot;" endMarker="&quot;" />
+                <param name="__EVENTVALIDATION" prefetch="true" startMarker="id=&quot;__EVENTVALIDATION&quot; value=&quot;" endMarker="&quot;" />
+                <param name="ctl00$ContentPlaceHolder1$Button1" prefetch="true" startMarker="id=&quot;ctl00$ContentPlaceHolder1$Button1&quot; value=&quot;" endMarker="&quot;" />
             </loginParams>
         </domain>
 
