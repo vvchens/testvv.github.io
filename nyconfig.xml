@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<appConfig>
+
+    <configUri>http://config.mdiidev.com/ny_native/qa/config-v2.xml</configUri>
+    <appUpdate>
+       <iOS>
+           <appVersion>1.0.5</appVersion>
+           <showMandatoryAppUpdate>Yes</showMandatoryAppUpdate>
+           <iOSUpdateAppUrl><![CDATA[https://itunes.apple.com/us/app/ny-lottery-players-club/id1142673560?mt=8]]></iOSUpdateAppUrl>
+           <appUpdatePopUpfrequency>1</appUpdatePopUpfrequency>
+           <appUpdateIncludes>There is an update available. Would you like to download?</appUpdateIncludes>
+       </iOS>
+       <android>
+           <appVersion>1.0.0</appVersion>
+           <showMandatoryAppUpdate>No</showMandatoryAppUpdate>
+           <androidUpdateAppUrl><![CDATA[https://play.google.com/store/apps/details?id=com.mdi.nylottery]]></androidUpdateAppUrl>
+           <appUpdatePopUpfrequency>1</appUpdatePopUpfrequency>
+           <appUpdateIncludes>There is an update available. Would you like to download?</appUpdateIncludes>
+       </android>
+    </appUpdate>
+    <environments>
+        <configUri default="true" title="QA">http://config.mdiidev.com/ny_native/qa/config-v2.xml</configUri>
+        <configUri title="UAT">http://config.mdiidev.com/ny_native/uat/config-v2.xml</configUri>
+    </environments>
+
+    <minimumUpdateInterval>0</minimumUpdateInterval>
+
+    <homeUri>http://ny.qa.secondchancebonuszone.com/playersclub/home.php</homeUri>
+
+    <imagesFolderUri>http://config.mdiidev.com/ny_native/qa</imagesFolderUri>
+
+    <menu version="2">
+
+        <rightArea>
+
+            <title>NY LOTTERY PLAYERS CLUB</title>
+
+            <bgColor>#04375E</bgColor>
+
+            <fontColor>#ffffff</fontColor>
+
+        </rightArea>
+        <leftArea>
+
+            <title>MENU</title>
+
+            <bgColor>#04375E</bgColor>
+
+            <fontColor>#ffdf1b</fontColor>
+
+            <bottom>
+
+                <bgColor>#04375E</bgColor>
+
+                <menuItems>
+
+                    <bgColor>#04375E</bgColor>
+
+                    <separatorColor>#04375E</separatorColor>
+
+                    <selectedBgColor>#04375E</selectedBgColor>
+
+                    <fontColor>#ffffff</fontColor>
+                    <fontSize>16</fontSize>
+                    <fontName>
+                        <ios2>Helvetica</ios2>
+                    </fontName>
+
+                    <!--item>
+                        <label>HOME</label>
+                        <linkUri>goHome</linkUri>
+
+                    </item>
+                    <item>
+                        <label>TICKET HISTORY</label>
+                        <linkUri>http://ny.qa.secondchancebonuszone.com/playersclub/my-entries.php
+                        </linkUri>
+
+                    </item>
+                    <item>
+                        <label>DRAWINGS AND WINNERS</label>
+                        <linkUri>
+                            http://ny.qa.secondchancebonuszone.com/playersclub/drawing-winners.php
+                        </linkUri>
+
+                    </item>
+                    <item>
+                        <label>OTHER APPS</label>
+                        <linkUri>
+                            http://ny.qa.secondchancebonuszone.com/playersclub/other-apps.php#
+                        </linkUri>
+                    </item>
+                    <item>
+                        <label>HELP</label>
+
+                        <menu>
+
+                            <leftArea>
+                                <title>HELP</title>
+                                <menuItems>
+                                    <item>
+                                        <label>OFFICIAL GUIDELINES</label>
+                                        <linkUri>
+                                            http://ny.qa.secondchancebonuszone.com/playersclub/rules.php
+                                        </linkUri>
+
+                                    </item>
+                                    <item>
+                                        <label>FAQ</label>
+                                        <linkUri>
+                                            http://ny.qa.secondchancebonuszone.com/playersclub/faq.php
+                                        </linkUri>
+
+                                    </item>
+                                    <item>
+                                        <label>FEEDBACK</label>
+                                        <linkUri>
+                                            http://ny.qa.secondchancebonuszone.com/playersclub/feedback.php
+                                        </linkUri>
+
+                                    </item>
+                                    <item>
+                                        <label>TERMS OF SERVICE</label>
+                                        <linkUri>
+                                            http://ny.qa.secondchancebonuszone.com/playersclub/terms.php
+                                        </linkUri>
+
+                                    </item>
+                                    <item>
+                                        <label>PRIVACY POLICY</label>
+                                        <linkUri>
+                                            http://ny.qa.secondchancebonuszone.com/playersclub/privacy.php
+                                        </linkUri>
+
+                                    </item>
+                                    <item>
+                                        <label>LEGAL NOTICES</label>
+                                        <linkUri>
+                                            http://ny.qa.secondchancebonuszone.com/playersclub/legal.php
+                                        </linkUri>
+
+                                    </item>
+                                </menuItems>
+                            </leftArea>
+                        </menu>
+                    </item-->
+                </menuItems>
+            </bottom>
+        </leftArea>
+    </menu>
+
+    <redirects>
+        <item>
+            <in><![CDATA[.*facebook\.com\/NewYorkLottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*facebook\.com\/newyorklottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*twitter\.com\/newyorklottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*instagram\.com\/newyorklottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*youtube\.com\/user\/NewYorkLottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*nylottery\.ny\.gov\/where-to-play.*]]></in>
+            <out target="externalApp"/>
+        </item>
+        <item>
+            <in><![CDATA[.*nylottery\.ny\.gov\/]]></in>
+            <out target="externalApp"/>
+        </item>
+    </redirects>
+
+    <activityIndicator type="bar">
+        <color>#ffff00</color>
+    </activityIndicator>
+
+    <autoAuth>
+
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://ny.qa.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://ny.qa.secondchancebonuszone.com:80]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://ny.qa.secondchancebonuszone.com:443]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://sotg-ny-uat.uat.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>entertainment</password>
+            <realm>Password Required</realm>
+        </domain>
+
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://sotg-ny-uat.uat.secondchancebonuszone.com:80]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>entertainment</password>
+            <realm>Password Required</realm>
+        </domain>
+
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://sotg-ny-uat.uat.secondchancebonuszone.com:443]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>entertainment</password>
+            <realm>Password Required</realm>
+        </domain>
+
+    </autoAuth>
+
+    <barCodeScanner>
+        <direction>BOTH</direction>
+        <effortLevel>3</effortLevel>
+        <!-- <scanArea x="0" y="20" width="100" height="60"></scanArea> -->
+        <formats>
+            <format>PDF417</format>
+            <format>DATAMATRIX</format>
+            <format>CODE_25</format>
+        </formats>
+    </barCodeScanner>
+
+</appConfig>
