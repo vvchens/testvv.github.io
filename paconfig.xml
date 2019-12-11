@@ -495,6 +495,30 @@
             <password>sgi</password>
             <realm>MDI</realm>
         </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://sc2.uat.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://sc2.uat.secondchancebonuszone.com:80]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://sc2.uat.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://sc2.uat.secondchancebonuszone.com:443]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
         <!--
          <domain>
          <loginBaseUri><![CDATA[https://www.palottery.beta.state.pa.us/cmspages/logon.aspx]]></loginBaseUri>
