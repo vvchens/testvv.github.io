@@ -12,22 +12,27 @@
     
     <minimumUpdateInterval>0</minimumUpdateInterval>
     
-    <homeUri>https://staging.v8.palottery.state.pa.us/mobileapp/Default.aspx</homeUri>
-    <opsUri>https://www-s34-1.nyxop.net/</opsUri>
-    <opsUserName>casino</opsUserName>
+    <homeUri>https://staging.v11.palottery.state.pa.us/mobileapp/Default.aspx</homeUri>
+
+    <opsUri>https://www-stage-pail.nyxop.net/</opsUri>
+    <opsUserName>lottery182205</opsUserName>
     <opsPassword>palottery</opsPassword>
+
     <opsGameBaseUrls>
         <gameBaseUri>dxm49uoxfmv67.cloudfront.net</gameBaseUri>
         <gameBaseUri>pennsylvanialottery-uat.finrings.com</gameBaseUri>
         <gameBaseUri>pennsylvanialottery-dev.finrings.com</gameBaseUri>
         <gameBaseUri>wimobile.casinarena.com</gameBaseUri>
-        <!--        <gameBaseUri>lon-pt-mob.wi-gameserver.com</gameBaseUri>-->
+<!--        <gameBaseUri>lon-pt-mob.wi-gameserver.com</gameBaseUri>-->
     </opsGameBaseUrls>
+    
     <opsGameBasePortraitUrls>
         <gameBasePortraitUri>penn-rainbow-fortunes</gameBasePortraitUri>
         <gameBasePortraitUri>penn-volcano</gameBasePortraitUri>
         <gameBasePortraitUri>penn-jungle-tumble</gameBasePortraitUri>
+<!--        <gameBasePortraitUri>penn-lucky-you</gameBasePortraitUri>-->
     </opsGameBasePortraitUrls>
+
     <opsDialogShowTime>300</opsDialogShowTime>
 
     <imagesFolderUri>https://vvchens.github.io/</imagesFolderUri>
@@ -137,7 +142,7 @@
                     </item>
                     <item>
                         <label>VIP Players Club</label>
-                        <linkUri><![CDATA[https://www-s34-1.nyxop.net/login/pta/?PtaUrl=https://staging.v8.palottery.state.pa.us/Misc/PAT-Sync-Test.aspx&Redirect=https://staging.v8.palottery.state.pa.us/mobileapp/vip-home.aspx]]></linkUri>
+                        <linkUri><![CDATA[https://www-stage-pail.nyxop.net/login/pta/?PtaUrl=https://staging.v11.palottery.state.pa.us/Misc/PAT-Sync-Test.aspx&Redirect=https://staging.v11.palottery.state.pa.us/mobileapp/vip-home.aspx]]></linkUri>
                         <icon>menu/vip.png</icon>
                     </item>
 
@@ -506,13 +511,13 @@
             <!-- <realm>www.palottery.beta.state.pa.us</realm> -->
             <loginBaseUri><![CDATA[http://www.palottery.beta.state.pa.us/mobileapp/vip-login.aspx]]></loginBaseUri>
             <loginParams>
-                <param name="ctl00$ContentPlaceHolder1$Username" />
-                <param name="ctl00$ContentPlaceHolder1$Password" />
-                <param name="remember_login" />
-                <param name="__VIEWSTATE" prefetch="true" startMarker="id=&quot;__VIEWSTATE&quot; value=&quot;" endMarker="&quot;" />
-                <param name="__VIEWSTATEGENERATOR" prefetch="true" startMarker="id=&quot;__VIEWSTATEGENERATOR&quot; value=&quot;" endMarker="&quot;" />
-                <param name="__EVENTVALIDATION" prefetch="true" startMarker="id=&quot;__EVENTVALIDATION&quot; value=&quot;" endMarker="&quot;" />
-                <param name="ctl00$ContentPlaceHolder1$Button1" prefetch="true" startMarker="id=&quot;ctl00$ContentPlaceHolder1$Button1&quot; value=&quot;" endMarker="&quot;" />
+                <param name="ctl00$ContentPlaceHolder1$Username"/>
+                <param name="ctl00$ContentPlaceHolder1$Password"/>
+                <param name="remember_login"/>
+                <param name="__VIEWSTATE" prefetch="true" startMarker='id="__VIEWSTATE" value="' endMarker='"' />
+                <param name="__VIEWSTATEGENERATOR" prefetch="true" startMarker='id="__VIEWSTATEGENERATOR" value="' endMarker='"' />
+                <param name="__EVENTVALIDATION" prefetch="true" startMarker='id="__EVENTVALIDATION" value="' endMarker='"' />
+                <param name="ctl00$ContentPlaceHolder1$Button1" prefetch="true" startMarker='id="ctl00$ContentPlaceHolder1$Button1" value="' endMarker='"' />
             </loginParams>
         </domain>
 
