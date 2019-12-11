@@ -1,6 +1,492 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <appConfig>
 
+    <configUri>https://vvchens.git1hub.io/paconfig.xml</configUri>
+
+
+    <minimumUpdateInterval>0</minimumUpdateInterval>
+
+    <homeUri>https://staging.v8.palottery.state.pa.us/mobileapp/Default.aspx</homeUri>
+    <opsUri>https://www-s34-1.nyxop.net/</opsUri>
+    <opsUserName>casino</opsUserName>
+    <opsPassword>palottery</opsPassword>
+    <opsGameBaseUrls>
+        <gameBaseUri>dxm49uoxfmv67.cloudfront.net</gameBaseUri>
+        <gameBaseUri>pennsylvanialottery-uat.finrings.com</gameBaseUri>
+        <gameBaseUri>pennsylvanialottery-dev.finrings.com</gameBaseUri>
+        <gameBaseUri>wimobile.casinarena.com</gameBaseUri>
+        <!--        <gameBaseUri>lon-pt-mob.wi-gameserver.com</gameBaseUri>-->
+    </opsGameBaseUrls>
+    <opsGameBasePortraitUrls>
+        <gameBasePortraitUri>penn-rainbow-fortunes</gameBasePortraitUri>
+        <gameBasePortraitUri>penn-volcano</gameBasePortraitUri>
+        <gameBasePortraitUri>penn-jungle-tumble</gameBasePortraitUri>
+    </opsGameBasePortraitUrls>
+    <opsDialogShowTime>300</opsDialogShowTime>
+
+    <imagesFolderUri>https://vvchens.github.io/</imagesFolderUri>
+    <menu version="2">
+        <rightArea>
+            <title>Pennsylvania Lottery</title>
+            <bgColor>#009a5b</bgColor>
+            <fontColor>#ffffff</fontColor>
+        </rightArea>
+        <leftArea>
+            <title><![CDATA[Main Menu]]></title>
+            <bgColor>#009a5b</bgColor>
+            <fontColor>#ffffff</fontColor>
+            <bottom>
+                <bgColor>#ffffff</bgColor>
+                <menuItems>
+                    <bgColor>#ffffff</bgColor>
+                    <separatorColor>#c5c5c5</separatorColor>
+                    <selectedBgColor>#ffffff</selectedBgColor>
+                    <fontColor>#009a5b</fontColor>
+                    <fontSize>12</fontSize>
+                    <fontName>
+                        <ios>Helvetica-Bold</ios>
+                    </fontName>
+                    <item>
+                        <label>Home Screen</label>
+                        <linkUri>goHome</linkUri>
+                        <icon>menu/home.png</icon>
+                    </item>
+                    <item>
+                        <label><![CDATA[Winning Numbers & Jackpots]]></label>
+                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/winning-numbers-and-jackpots.aspx</linkUri>
+                        <icon>menu/winningnumbers.png</icon>
+                    </item>
+                    <item>
+                        <label>iLottery Play Online</label>
+                        <linkUri>goOPSPortal</linkUri>
+                        <icon>menu/ilottery.png</icon>
+                    </item>
+                    <item>
+                        <label>Scratch-Offs</label>
+                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/instant-games.aspx</linkUri>
+                        <icon>menu/scratchoffs.png</icon>
+                    </item>
+                    <item>
+                        <label>Fast Play</label>
+                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/fast-play.aspx</linkUri>
+                        <icon>menu/fastplay.png</icon>
+                    </item>
+                    <item>
+                        <label>Keno</label>
+                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/keno.aspx</linkUri>
+                        <icon>menu/keno.png</icon>
+                    </item>
+                    <item>
+                        <label>Xpress Sports</label>
+                        <!--                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/xpress-sports.aspx</linkUri>-->
+                        <icon>menu/xpress.png</icon>
+                        <menu>
+                            <leftArea>
+                                <title>Xpress Sports</title>
+                                <menuItems>
+                                    <item>
+                                        <label>Xpress Sports</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/xpress-sports.aspx</linkUri>
+                                        <icon>menu/xpress.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Xpress Football</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/xpress-football.aspx</linkUri>
+                                        <icon>menu/xpressfootball.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Xpress Car Racing</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/xpress-car-racing.aspx</linkUri>
+                                        <icon>menu/xpresscar.png</icon>
+                                    </item>
+                                </menuItems>
+                            </leftArea>
+                        </menu>
+                    </item>
+                    <item>
+                        <label>Ticket Checker</label>
+                        <linkUri>https://pa2.uat.secondchancebonuszone.com/ticketchecker</linkUri>
+                        <icon>menu/ticketchecker.png</icon>
+                    </item>
+                    <item>
+                        <label>VIP Players Club</label>
+                        <linkUri><![CDATA[https://www-s34-1.nyxop.net/login/pta/?PtaUrl=https://staging.v8.palottery.state.pa.us/Misc/PAT-Sync-Test.aspx&Redirect=https://staging.v8.palottery.state.pa.us/mobileapp/vip-home.aspx]]></linkUri>
+                        <icon>menu/vip.png</icon>
+                    </item>
+                    <item>
+                        <label><![CDATA[Second Chance ™]]></label>
+                        <linkUri>https://pademo-30d71.firebaseapp.com/</linkUri>
+                        <icon>menu/secondchance.png</icon>
+                    </item>
+                    <item>
+                        <label>Connect With Us</label>
+                        <icon>menu/connectwithus.png</icon>
+                        <menu>
+                            <leftArea>
+                                <title>Connect With Us</title>
+                                <menuItems>
+                                    <item>
+                                        <label>Home Screen</label>
+                                        <linkUri>goHome</linkUri>
+                                        <icon>menu/home.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Where to Buy</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/where-to-buy.aspx</linkUri>
+                                        <icon>menu/wheretobuy.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Follow Us</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/follow-us.aspx</linkUri>
+                                        <icon>menu/followus.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Contact</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/contact-us.aspx</linkUri>
+                                        <icon>menu/contact.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Visit Our Website</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/?r=mobileapp</linkUri>
+                                        <icon>menu/visitwebsite.png</icon>
+                                    </item>
+                                </menuItems>
+                            </leftArea>
+                        </menu>
+                    </item>
+                    <item>
+                        <label>Info</label>
+                        <icon>menu/info.png</icon>
+                        <menu>
+                            <leftArea>
+                                <title>Info</title>
+                                <menuItems>
+                                    <item>
+                                        <label>Home Screen</label>
+                                        <linkUri>goHome</linkUri>
+                                        <icon>menu/home.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>About Us</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/about-us.aspx</linkUri>
+                                        <icon>menu/aboutusnews.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>How to Claim a Prize</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/how-to-claim-a-prize.aspx</linkUri>
+                                        <icon>menu/claimaprize.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Please Play Responsibly</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/please-play-responsibly.aspx</linkUri>
+                                        <icon>menu/pleaseplayrespon.png</icon>
+                                    </item>
+                                    <item>
+                                        <label>Terms of Service</label>
+                                        <linkUri>https://staging.v8.palottery.state.pa.us/mobileapp/terms-of-service.aspx</linkUri>
+                                        <icon>menu/termsofservice.png</icon>
+                                    </item>
+                                </menuItems>
+                            </leftArea>
+                        </menu>
+                    </item>
+                    <!--  <item>
+                     <label>SG Test Only</label>
+                     <linkUri>http://pa2.qts.uat.secondchancebonuszone.com/ticketchecker</linkUri>
+                     <icon>menu/ticketchecker.png</icon>
+                     </item> -->
+                </menuItems>
+            </bottom>
+        </leftArea>
+    </menu>
+    <activityIndicator type="bar">
+        <color>#ffff00</color>
+    </activityIndicator>
+    <redirects>
+        <item>
+            <in><![CDATA[.*images\.revtrax\.com\/RevTrax\/cpn1.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*Public\/FINAL-V2-Mobile-App-2015-Pro-Football-Tickets-Jers\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*Forgot-Password\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*About-PA-Lottery\/Subscribe-to-RSS\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*About-PA-Lottery\/Connect-with-us!\/SMS-Terms-and-Conditions\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*Safe-Sender-Email\.aspx]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*facebook\.com\/palottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*twitter\.com\/palottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*facebook\.com\/share.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*twitter\.com\/share.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*\.pdf.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*pacode\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*pabulletin\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*pabulletin\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*Benefits-Info\/Benefits-Info\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*Winners\/Winners\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*youtube\.com\/palottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*twitter\.com\/palottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*facebook\.com\/palottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*\/ninth-inning\/.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*twitter\.com\/intent\/tweet?.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*VIP-Players-Club\/Public\/Mobile-App-2016-Pro-Behind-the-Scenes-Hockey-Givea\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*https://www.catchinstantcheer.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*www\.instagram\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*www\.palotteryinsiders\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*https://www.palottery.state.pa.us/Misc/Android.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*https://staging.v8.palottery.state.pa.us/Misc/Android.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*\/Misc\/android\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*itunes\.apple\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*youtube\.com\/user\/PennsylvaniaLottery.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*twitter\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*instagram\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*www\.google\.com\/policies\/privacy\/partners.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*flickr\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*pacouncil\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*linkedin\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*r=mobileapp.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*help\.pailottery\.com.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*staging\.v8\.palottery\.state\.pa\.us\/Xpress\/Football\/Daily-Lineup\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+        <item>
+            <in><![CDATA[.*staging\.v8\.palottery\.state\.pa\.us\/misc\/pa-lottery-coupons\.aspx.*]]></in>
+            <out target="externalApp" />
+        </item>
+    </redirects>
+
+    <autoAuth>
+        <domain type="basicAuth">
+            <loginBaseUri>http://ia.pawtest.gamelogic.com</loginBaseUri>
+            <userName>mdi</userName>
+            <password>entertainment</password>
+            <realm>Password Required</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri>http://ia.pawtest.gamelogic.com:80</loginBaseUri>
+            <userName>mdi</userName>
+            <password>entertainment</password>
+            <realm>Password Required</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri>http://ia.pawtest.gamelogic.com</loginBaseUri>
+            <userName>mdi</userName>
+            <password>entertainment</password>
+            <realm>Password Required</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri>http://ia.pawtest.gamelogic.com:443</loginBaseUri>
+            <userName>mdi</userName>
+            <password>entertainment</password>
+            <realm>Password Required</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://pa2.uat.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://pa2.uat.secondchancebonuszone.com:80]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://pa2.uat.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://pa2.uat.secondchancebonuszone.com:80]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://pa2.uat.secondchancebonuszone.com:443]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://sc2.uat.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[http://sc2.uat.secondchancebonuszone.com:80]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://sc2.uat.secondchancebonuszone.com]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <domain type="basicAuth">
+            <loginBaseUri><![CDATA[https://sc2.uat.secondchancebonuszone.com:443]]></loginBaseUri>
+            <userName>mdi</userName>
+            <password>sgi</password>
+            <realm>MDI</realm>
+        </domain>
+        <!--
+         <domain>
+         <loginBaseUri><![CDATA[https://www.palottery.beta.state.pa.us/cmspages/logon.aspx]]></loginBaseUri>
+         <loginParams>
+
+         <param name="Login1$UserName"/>
+         <param name="Login1$Password"/>
+         <param name="Login1$chkRememberMe"/>
+         </loginParams>
+         </domain>
+         -->
+
+        <domain>
+            <!-- <realm>www.palottery.beta.state.pa.us</realm> -->
+            <loginBaseUri><![CDATA[http://www.palottery.beta.state.pa.us/mobileapp/vip-login.aspx]]></loginBaseUri>
+            <loginParams>
+                <param name="ctl00$ContentPlaceHolder1$Username" />
+                <param name="ctl00$ContentPlaceHolder1$Password" />
+                <param name="remember_login" />
+                <param name="__VIEWSTATE" prefetch="true" startMarker="id=&quot;__VIEWSTATE&quot; value=&quot;" endMarker="&quot;" />
+                <param name="__VIEWSTATEGENERATOR" prefetch="true" startMarker="id=&quot;__VIEWSTATEGENERATOR&quot; value=&quot;" endMarker="&quot;" />
+                <param name="__EVENTVALIDATION" prefetch="true" startMarker="id=&quot;__EVENTVALIDATION&quot; value=&quot;" endMarker="&quot;" />
+                <param name="ctl00$ContentPlaceHolder1$Button1" prefetch="true" startMarker="id=&quot;ctl00$ContentPlaceHolder1$Button1&quot; value=&quot;" endMarker="&quot;" />
+            </loginParams>
+        </domain>
+    </autoAuth>
+    <authCookieName>PALMobileAppLoggedIn</authCookieName>
+    <barCodeScanner>
+        <direction>BOTH</direction>
+        <effortLevel>3</effortLevel>
+        <!-- <scanArea x="0" y="20" width="100" height="60"></scanArea> -->
+        <formats>
+            <format>PDF417</format>
+            <format>DATAMATRIX</format>
+        </formats>
+    </barCodeScanner>
+</appConfig>
+
+
+
+<!-- <?xml version="1.0" encoding="UTF-8" ?>
+<appConfig>
+
     <configUri>https://vvchens.github.io/paconfig.xml</configUri>
 
     <environments>
@@ -536,3 +1022,4 @@
     </barCodeScanner>
 
 </appConfig>
+-->
