@@ -137,7 +137,7 @@
                     </item>
                     <item>
                         <label>VIP Players Club</label>
-                        <linkUri><![CDATA[https://www-stage-pail.nyxop.net/login/pta/?PtaUrl=https://staging.v11.palottery.state.pa.us/Misc/PAT-Sync-Test.aspx&Redirect=https://staging.v11.palottery.state.pa.us/mobileapp/vip-home.aspx]]></linkUri>
+                        <linkUri><![CDATA[https://www-s34-1.nyxop.net/login/pta/?PtaUrl=https://staging.v8.palottery.state.pa.us/Misc/PAT-Sync-Test.aspx&Redirect=https://staging.v8.palottery.state.pa.us/mobileapp/vip-home.aspx]]></linkUri>
                         <icon>menu/vip.png</icon>
                     </item>
 
