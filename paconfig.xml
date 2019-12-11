@@ -148,7 +148,7 @@
 
                     <item>
                         <label><![CDATA[Second Chance ™]]></label>
-                        <linkUri>https://staging.v11.palottery.state.pa.us/mobileapp/second-chance-prize-zone.aspx</linkUri>
+                        <linkUri>https://pademo-30d71.firebaseapp.com/</linkUri>
                         <icon>menu/secondchance.png</icon>
                     </item>
 
