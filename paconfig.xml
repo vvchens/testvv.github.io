@@ -11,28 +11,23 @@
     </environments>
     
     <minimumUpdateInterval>0</minimumUpdateInterval>
-
-    <homeUri>https://staging.v11.palottery.state.pa.us/mobileapp/Default.aspx</homeUri>
-
-    <opsUri>https://www-stage-pail.nyxop.net/</opsUri>
-    <opsUserName>lottery182205</opsUserName>
+    
+    <homeUri>https://staging.v8.palottery.state.pa.us/mobileapp/Default.aspx</homeUri>
+    <opsUri>https://www-s34-1.nyxop.net/</opsUri>
+    <opsUserName>casino</opsUserName>
     <opsPassword>palottery</opsPassword>
-
     <opsGameBaseUrls>
         <gameBaseUri>dxm49uoxfmv67.cloudfront.net</gameBaseUri>
         <gameBaseUri>pennsylvanialottery-uat.finrings.com</gameBaseUri>
         <gameBaseUri>pennsylvanialottery-dev.finrings.com</gameBaseUri>
         <gameBaseUri>wimobile.casinarena.com</gameBaseUri>
-<!--        <gameBaseUri>lon-pt-mob.wi-gameserver.com</gameBaseUri>-->
+        <!--        <gameBaseUri>lon-pt-mob.wi-gameserver.com</gameBaseUri>-->
     </opsGameBaseUrls>
-    
     <opsGameBasePortraitUrls>
         <gameBasePortraitUri>penn-rainbow-fortunes</gameBasePortraitUri>
         <gameBasePortraitUri>penn-volcano</gameBasePortraitUri>
         <gameBasePortraitUri>penn-jungle-tumble</gameBasePortraitUri>
-<!--        <gameBasePortraitUri>penn-lucky-you</gameBasePortraitUri>-->
     </opsGameBasePortraitUrls>
-
     <opsDialogShowTime>300</opsDialogShowTime>
 
     <imagesFolderUri>https://vvchens.github.io/</imagesFolderUri>
