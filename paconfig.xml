@@ -275,127 +275,127 @@
     <redirects>
         <item>
             <in><![CDATA[.*images\.revtrax\.com\/RevTrax\/cpn1.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*Public\/FINAL-V2-Mobile-App-2015-Pro-Football-Tickets-Jers\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*Forgot-Password\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*About-PA-Lottery\/Subscribe-to-RSS\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*About-PA-Lottery\/Connect-with-us!\/SMS-Terms-and-Conditions\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*Safe-Sender-Email\.aspx]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*facebook\.com\/palottery.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*twitter\.com\/palottery.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*facebook\.com\/share.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*twitter\.com\/share.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*\.pdf.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*pacode\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*pabulletin\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*pabulletin\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*Benefits-Info\/Benefits-Info\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*Winners\/Winners\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*youtube\.com\/palottery.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*twitter\.com\/palottery.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*facebook\.com\/palottery.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*\/ninth-inning\/.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*twitter\.com\/intent\/tweet?.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*VIP-Players-Club\/Public\/Mobile-App-2016-Pro-Behind-the-Scenes-Hockey-Givea\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*https://www.catchinstantcheer.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*www\.instagram\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*www\.palotteryinsiders\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*https://www.palottery.state.pa.us/Misc/Android.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
-            <in><![CDATA[.*https://staging.v11.palottery.state.pa.us/Misc/Android.aspx.*]]></in>
-            <out target="externalApp"/>
+            <in><![CDATA[.*https://staging.v8.palottery.state.pa.us/Misc/Android.aspx.*]]></in>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*\/Misc\/android\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*itunes\.apple\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*youtube\.com\/user\/PennsylvaniaLottery.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*twitter\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*instagram\.com.*]]></in>
@@ -403,7 +403,7 @@
         </item>
         <item>
             <in><![CDATA[.*www\.google\.com\/policies\/privacy\/partners.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*flickr\.com.*]]></in>
@@ -411,7 +411,7 @@
         </item>
         <item>
             <in><![CDATA[.*pacouncil\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*linkedin\.com.*]]></in>
@@ -419,18 +419,18 @@
         </item>
         <item>
             <in><![CDATA[.*r=mobileapp.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
             <in><![CDATA[.*help\.pailottery\.com.*]]></in>
-            <out target="externalApp"/>
+            <out target="externalApp" />
         </item>
         <item>
-            <in><![CDATA[.*staging\.v11\.palottery\.state\.pa\.us\/Xpress\/Football\/Daily-Lineup\.aspx.*]]></in>
-            <out target="externalApp"/>
+            <in><![CDATA[.*staging\.v8\.palottery\.state\.pa\.us\/Xpress\/Football\/Daily-Lineup\.aspx.*]]></in>
+            <out target="externalApp" />
         </item>
         <item>
-            <in><![CDATA[.*staging\.v11\.palottery\.state\.pa\.us\/misc\/pa-lottery-coupons\.aspx.*]]></in>
+            <in><![CDATA[.*staging\.v8\.palottery\.state\.pa\.us\/misc\/pa-lottery-coupons\.aspx.*]]></in>
             <out target="externalApp" />
         </item>
     </redirects>
