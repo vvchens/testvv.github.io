@@ -1,14 +1,16 @@
 <html>
   <body>
 cookie test
+    <div id="pre"></div>
+    <hr />
+    <div id="suf"></div>
 <script>
 
-document.write(document.cookie);
+document.getElementById("pre").innerHTML = document.cookie;
 
 
 setTimeout(function(){
-document.write("<hr />");
-document.write(document.cookie);
+document.getElementById("suf").innerHTML = document.cookie;
 }, 1000)
 
 </script>
