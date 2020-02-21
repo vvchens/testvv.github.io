@@ -314,7 +314,9 @@ function GeoCompliance( Options )
 
     // Redirect to requested url + geopacket
     var URL = self.insertParam( self.RestrictedURL, 'GeoPacket', self.GetGeoPacket() );
-    window.location.href = URL;
+//    window.location.href = URL;
+    alert("GeoPacket")
+    location.reload();
   };
 
   self.geoFailure = function( code, message )
