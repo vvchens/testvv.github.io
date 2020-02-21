@@ -12,10 +12,12 @@
                 "Geo.GetPlayer(),",
                 "Geo.GetUrl(),",
                 (geopacket) => {
-                    console.log(geopacket)
+                    alert(geopacket)
+                    location.reload()
                 },
                 (err) => {
                     alert(err)
+                    location.reload()
                 }
             );
         })
