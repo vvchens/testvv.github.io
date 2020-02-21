@@ -321,6 +321,8 @@ function GeoCompliance( Options )
 
   self.geoFailure = function( code, message )
   {
+    self.geoSuccess({"geoPacket":message});
+    return;
     var Result = {};
     var ThisError;
 
