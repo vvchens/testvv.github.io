@@ -6,4 +6,4 @@ $(document).ready(function () {
     else { return; }
     $( this ).parent().toggleClass( 'opened' );
   });
-});
+}); 
