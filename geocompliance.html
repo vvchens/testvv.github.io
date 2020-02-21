@@ -222,11 +222,11 @@
 
     // if jQuery.ui.js is not yet loaded, try to load it
     if( jQuery.ui !== undefined ) {
-      StartTimer();
+      //StartTimer();
     } else {
       $.getScript( '/v/1.37.11/b/js/jquery.ui.js' )
         .done( function( script, status ) {
-          StartTimer();
+          //StartTimer();
         });
     }
 
