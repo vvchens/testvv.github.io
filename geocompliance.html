@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/header.php -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>North Dakota Lottery</title>
+    <!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/metatags.php -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1"/>
+<meta name="format-detection" content="telephone=no"/><!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/metatags.php -->
+    <link rel="stylesheet" href="/v/1.37.11/d/css/globalstylesmain.css" type="text/css" media="all" />
+<!--[if IE]><link rel="stylesheet" href="/v/1.37.11/d/css/globalstylesmain.ie.css" type="text/css" media="all" /><![endif]-->
+<!--[if IE 9]><link rel="stylesheet" href="/v/1.37.11/d/css/globalstylesmain.ie9.css" type="text/css" media="all" /><![endif]-->
+    <link rel="stylesheet" href="/v/1.37.11/b/css/dashboard.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/v/1.37.11/b/css/globalstyles.css.php" type="text/css" media="all" />
+    <link rel="stylesheet" href="/v/1.37.11/b/css/jquery.ui/ui.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/v/1.37.11/d/css/colorbox.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/v/1.37.11/d/css/staticmain.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/php/public/VANILLA/css/static.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/v/1.37.11/b/css/styles.css.php" type="text/css" media="all" />
+<link rel="stylesheet" href="/v/1.37.11/b/css/styles.loggedin.css.php" type="text/css" media="all" />
+    <script type="text/javascript" src="/v/1.37.11/d/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/v/1.37.11/d/js/submenu.js"></script>
+    <script type="text/javascript" src="/v/1.37.11/d/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/v/1.37.11/d/js/swfobject.js"></script>
+<script type="text/javascript" src="/v/1.37.11/b/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/v/1.37.11/b/js/jquery.ui.js"></script>
+
+        <script src="https://hosted.paysafe.com/js/v1/latest/paysafe.min.js"></script>
+
+    <link rel="shortcut icon" href="/b/i/favicon.ico" />
+        
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1679356312348832');
+    fbq('track', "PageView");</script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1679356312348832&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+  </head>
+<!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/header.php -->
+<body> 
+  <!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/static/viewtop.php -->
+<div id="Wrap">
+  <!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/masthead.php -->
+<!-- /paw/paw/docroot/php/tmpl/DEFAULT/global/inactivitytimer.php -->
+<script type="text/javascript">
+// encapsulate to avoid potential global scope collisions
+( function() {
+
+
+  var cLogoutUrl = '/logout';
+  var cHomeUrl = '/';
+  var cActivityEvents = 'mouseup keyup';
+  var cWarningMins = 10;
+  var cTimeoutMins = 15;
+  //convert minutes to seconds
+  var cWarningSecs = cWarningMins * 60;
+  var cTimeoutSecs = cTimeoutMins * 60;
+  var ActivityInterval;
+  var WarningDialogIsOpen = false;
+
+
+  function CheckActivity()
+  {
+    //see if user has timed out
+    if ( getInactiveSeconds() >= cTimeoutSecs )
+    {
+      // user has timed out, log them off before we do anything else
+      var LoggedOut = false;
+      $.ajax({
+        url: cLogoutUrl
+      }).done( function() {
+        LoggedOut = true;
+      });
+
+      // stop the timer from running indefinitely
+      clearInterval( ActivityInterval );
+      $(document).unbind( cActivityEvents, ActivityHandler );
+
+      // close the warning dialog
+      if( WarningDialogIsOpen )
+      {
+        $( "#dialog-warning" ).dialog( "close" );
+      }
+
+      //remove the cookie
+      $.cookie('lastActiveTime', null);
+
+      //show dialog
+      $( "#dialog-timeout" ).dialog( {
+          width: 300,
+          position: {
+            my: "center",
+            at: "center",
+            of: window
+          },
+          modal: true,
+          resizable: false,
+          draggable: false,
+          closeOnEscape: true,
+          close: function() {
+            // redirect to home, or trigger a logout
+            if( LoggedOut )
+            { window.location.href = cHomeUrl; }
+            else
+            { window.location.href = cLogoutUrl; }
+          },
+          buttons: {
+            Ok: function() {
+              $( this ).dialog( "close" );
+            }
+          }
+      });
+
+      CenterDialog( '#dialog-timeout' );
+
+    }
+    //see if user should be given warning
+    else if( cWarningSecs > 0 && getInactiveSeconds() >= cWarningSecs )
+    {
+      // unbind events so background clicks don't reset inactivity
+      // count (force the user to acknowledge the warning)
+      $(document).unbind( cActivityEvents, ActivityHandler );
+
+      // show the warning dialog; on close reset inactivity and rebind events
+      WarningDialogIsOpen = true;
+      $( "#dialog-warning" ).dialog( {
+        width: 300,
+        position: {
+          my: "center",
+          at: "center",
+          of: window
+        },
+        modal: true,
+        resizable: false,
+        draggable: false,
+        closeOnEscape: true,
+        close: function() {
+          WarningDialogIsOpen = false;
+          $(document).bind( cActivityEvents, ActivityHandler );
+          UpdateCookieTime();
+        },
+        buttons: {
+          Ok: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      });
+
+      CenterDialog( '#dialog-warning' );
+
+    }
+
+  };
+
+  // called on user activity to reset the cookie
+  var ActivityHandler = function()
+  {
+    //set timestamp last active
+    UpdateCookieTime();
+  };
+
+  function StartTimer()
+  {
+    // if brand has a timeoutmins, start a timer (if only a warningmins, do nothing)
+    if( cTimeoutSecs > 0 ) {
+      // start a timer to check for activity every second
+      ActivityInterval = setInterval( function() { CheckActivity(); }, 1000 );
+
+      // any mouse or keyboard clicks on this page will reset the InactiveMins count
+      //  (use a named function here so it can be turned on and off as needed)
+      $(document).bind( cActivityEvents, ActivityHandler );
+    }
+  };
+
+  //return the integer of seconds a user has been inactive
+  function getInactiveSeconds()
+  {
+    var LastActiveTime = $.cookie('lastActiveTime');
+    var CurrentTimeStamp = new Date().getTime();
+    var Seconds = 0;
+    if ( LastActiveTime != null )
+    {
+      Seconds = Math.round( ( CurrentTimeStamp / 1000 ) - ( LastActiveTime / 1000 ) );
+    }
+    return( Seconds )
+  };
+
+  function CenterDialog( id )
+  {
+    $( window ).on( 'resize scroll', function( e ) {
+      $( id ).dialog( 'option', 'position', 'center' );
+    });
+  }
+
+  function UpdateCookieTime()
+  {
+    var CurrentTime = new Date().getTime()
+    $.cookie('lastActiveTime', CurrentTime, { path: '/' });
+  };
+
+  $(document).ready( function() {
+
+    //set the cookie that will track users last action-time
+    if( jQuery.cookie !== undefined ) {
+      UpdateCookieTime();
+    } else {
+      $.getScript( '/v/1.37.11/d/js/jquery.cookie.js' )
+      .done( function( script, status ) {
+        UpdateCookieTime();
+      });
+    }
+
+    // if jQuery.ui.js is not yet loaded, try to load it
+    if( jQuery.ui !== undefined ) {
+      StartTimer();
+    } else {
+      $.getScript( '/v/1.37.11/b/js/jquery.ui.js' )
+        .done( function( script, status ) {
+          StartTimer();
+        });
+    }
+
+    // if jQuery.ui/ui.css is not yet loaded, try to load it
+    if ( $( 'head link[rel="stylesheet"][href*="jquery.ui/ui.css"]' ).length < 1 ) {
+      $( '<link />' )
+        .attr( 'rel', 'stylesheet' )
+        .attr( 'href', '/v/1.37.11/b/css/jquery.ui/ui.css' )
+        .appendTo( 'head' );
+    }
+
+
+  } );
+
+}() );
+
+</script>
+
+<div id="dialog-warning" class="hidden" title="Inactivity Warning">
+  <p>
+    <span class="ui-icon ui-icon-info FloatLeft"></span>
+    Your session is about to expire due to inactivity.<br/><br/>Click 'Ok' to avoid being logged out.  </p>
+</div>
+
+<div id="dialog-timeout" class="hidden" title="Session Expiration" >
+  <p>
+    <span class="ui-icon ui-icon-alert FloatLeft"></span>
+    Your session has expired due to inactivity.<br/><br/>Click 'Ok' to sign in again.  </p>
+</div><!--/ /paw/paw/docroot/php/tmpl/DEFAULT/global/inactivitytimer.php -->
+<!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/app/menu.php -->
+<div id="mobileHeaderBar" class="mobileBar">
+  <a href="/lotto/draw">
+    <div>
+      <img src="/v/1.37.11/b/i/pickClick.svg"  alt="Pick and Click" />    </div>
+    <span class="">Buy</span>
+  </a>
+  <a href="/wallet/deposit">
+    <div>
+      <img src="/v/1.37.11/b/i/wallet.svg"  alt="Fund Wallet" />    </div>
+    <span class="">Fund</span>
+  </a>
+  <a href="/checkticket">
+    <div>
+      <img src="/v/1.37.11/b/i/check.svg"  alt=" Check Ticket" />    </div>
+    <span class="">Check</span>
+  </a>
+  <a href="/pia">
+    <div>
+      <img src="/v/1.37.11/b/i/rewards.svg"  alt="Rewards" />    </div>
+    <span class="">Rewards</span>
+  </a>
+  <a href="/lotto/cart">
+    <div>
+      <img src="/v/1.37.11/b/i/pickClickCart.svg"  id="mobileCartIcon" alt="Cart" />    </div>
+    <span class="Bold">1</span>
+    <span class="">Cart</span>
+  </a>
+</div>
+
+<div id="accountHolderBar" class="clearfix">
+  <a href="http://ndlotteryuatsotg.lotterybonusplay.com/cart" class="cartPFP">
+    <img src="/v/1.37.11/b/i/cartv2.png"  class="iconCart" alt="PFP Cart" />    <span class="cartTitle">PFP</span>
+  </a>
+  <div class="account">
+    <span class="playerName">Test</span>
+    <a href="/logout" class="logout">Logout</a>
+  </div>
+</div>
+
+<div id="mobileFooterBar" class="mobileBar">
+  <a href="/points/history">
+    <div>
+      <img src="/v/1.37.11/b/i/points.svg"  id="mobilePointsIcon" alt="Points" />    </div>
+    <span class="Bold">250</span>
+    <span class="">Points</span>
+  </a>
+  <a href="http://ndlotteryuatsotg.lotterybonusplay.com">
+    <div>
+      <img src="/v/1.37.11/b/i/pfp_logo.png"  id="mobileShopIcon" alt="Shop" />    </div>
+    <span class="">Shop</span>
+  </a>
+  <a href="http://ndlotteryuatsotg.lotterybonusplay.com/landing.php?tab=Drawings">
+    <div>
+      <img src="/v/1.37.11/b/i/pfd_logo.png"  id="mobileDrawingsIcon" alt="Drawings" />    </div>
+    <span class="">Drawings</span>
+  </a>
+  <a href="/lotto/lottohistory">
+    <div>
+      <img src="/v/1.37.11/b/i/history.svg"  id="mobileHistoryIcon" alt="History" />    </div>
+    <span class="">Purchase<br>History</span> <!-- force a clean break -->
+  </a>
+  <a href="/messagecenter">
+    <div>
+      <img src="/v/1.37.11/b/i/messages.svg"  id="mobileMessageIcon" alt="Messages" />    </div>
+    <span class="">MSGS</span>
+  </a>
+</div>
+
+<script type="text/javascript">
+  var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+  var eventer = window[eventMethod];
+  var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+  // Listen to message from child window
+  eventer(messageEvent,function(e)
+  {
+    var key = e.message ? "message" : "data";
+    var data = e[key];
+    var ShowMobile = ( e.data === "1" );
+    $body.toggleClass( 'toggleFixedPosition', ShowMobile );
+  },false);
+
+  var $body     = $('body'),
+    ua        = navigator.userAgent.toLowerCase(),
+    isAndroid = ua.indexOf("android") > -1,
+    triggers = 'input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], select, textarea';
+
+  if ( isAndroid )
+  {
+    $( window ).on( 'resize', function()
+    {
+      // Minimimum height chosen to match general device height range.
+      // TODO: have app team install phonegap support for keyboard detection
+      var ArbitraryWindowMinHeight = 550;
+      $body.toggleClass( 'toggleFixedPosition', ( window.innerHeight < 550 ) );
+    } );
+  }
+
+  $(function ()
+  {
+    if ( ! isAndroid )
+    {
+      // Toggle fixed positioning based on if the mobile keyboard is open
+      $( document ).on( 'focus', triggers, function( event )
+      {
+        if ( ! isReadOnly( event ) )
+        {
+          $body.addClass( 'toggleFixedPosition' );
+        }
+      } ).on( 'blur', triggers, function( event )
+      {
+        if ( ! isReadOnly( event ) )
+        {
+          $body.removeClass( 'toggleFixedPosition' );
+        }
+      } );
+    } // end if not Android
+
+    function isReadOnly(e)
+    {
+      return e.currentTarget.readOnly;
+    }
+    
+  });
+</script><!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/app/menu.php -->
+<!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/app/banner.php -->
+
+<!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/app/banner.php -->
+<!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/masthead.php -->
+  <div class="sub-page">
+    <div class="container">
+            <!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/navigation/loggedin.php -->
+<!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/navigation/loggedin.php -->
+   <!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/static/viewtop.php -->
+  <div class="primary-content">
+    <!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance.php -->
+<script type="text/javascript" src="/geocompliance.js"></script>
+<!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/appgeocheck.php -->
+<!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/spinner.php -->
+<div id="geomodal" >
+<div id="geospinner" class="geoContainer TextCenter">
+  <div class="icon">
+    <img src="/v/1.37.11/d/i/geo/mapsearch.png"  alt="GeoLocation Check" class="MarginCenter" width="150" />  </div>
+
+  <p class="msg">Please wait while your location is verified</p>
+
+  <div class="loading">
+    <img src="/v/1.37.11/d/i/dots_loading.gif"  alt="Loading..." class="MarginCenter" width="75" />  </div>
+</div>
+</div>
+<!--/ /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/spinner.php -->
+
+<script>
+  $( function()
+  {
+    // Setting up the parameters
+    var GeoOptions = {
+      RestrictedURL: '',
+      Reason: '',
+      Player: '11604312',
+      License: '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',
+      SdkMode: GeoStatic.SdkModes.mobile,
+      AjaxMode: false,
+      PostFormId: ''
+    };
+
+    var Geo = new GeoCompliance( GeoOptions );
+
+    if ( GeoStatic.mdiIsNativeShell() )
+    {
+      $( document ).on( 'deviceready', function()
+      {
+        if( ( typeof MdiNativeShell == "undefined" ) ||
+            ( typeof MdiNativeShell.getGeoPacket != "function" ) )
+        {
+          window.location.href='/account/nativeappupdaterequired';
+          return;
+        }
+
+        Geo.showGeoModal();
+
+        // request geolocation
+        MdiNativeShell.getGeoPacket(
+          Geo.GetLicense(),
+          Geo.GetPlayer(),
+          Geo.GetUrl(),
+          Geo.JsonSuccess,
+          Geo.JsonFailure
+        );
+      } );
+    }
+    else
+    {
+      Geo.geoFailure( 'MOBILE_APP_REQUIRED', 'Mobile App Not Detected' );
+    }
+  });
+</script>
+<!--/ /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/appgeocheck.php -->
+<!--/ /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance.php -->
+  </div><!-- close primary content -->    
+  <!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/static/viewbottom.php -->
+    </div><!-- END container -->
+    <div class="Clear"> </div>
+  </div><!-- close sub-page -->
+  <!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/footer.php -->
+</div><!-- END inner-wrapper -->
+<div class="Clear"></div>
+
+<!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/usabilla.php -->
+<!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/usabilla.php -->
+
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 999168458;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+  <script>
+    $(function()
+    {
+      // Add a click event to tooltips allowing them to be visible to the user in the app.
+      $("img.tooltip").click(function ( e )
+      {
+        e.preventDefault();
+        var $title = $(this).parent().find('.popupTooltip');
+        if (!$title.length)
+        {
+          $(this).parent().append('<span class="popupTooltip">' + $(this).attr("title") + '</span>');
+        }
+        else
+        {
+          $title.remove();
+        }
+      }); // end click.
+    });
+  </script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/999168458/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/global/footer.php -->
+</div><!-- closing Wrap --><!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/static/viewbottom.php -->
+  <!-- /paw/paw/docroot/php/tmpl/DEFAULT/global/analytics.php -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+  
+   _gaq.push(['AUA-51021431-1._setAccount', 'UA-51021431-1' ]);
+       _gaq.push(['AUA-51021431-1._trackPageview']);
+     (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ </script>
+
+<!--/ /paw/paw/docroot/php/tmpl/DEFAULT/global/analytics.php -->
+</body>
+</html>
+<!--/ /paw/paw/docroot/php/tmpl/VANILLA/static/index.php -->
