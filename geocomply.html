@@ -1,0 +1,25 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    GeoComply TEST
+    <script>
+        document.addEventListener("deviceready", () => {
+            MdiNativeShell.getGeoPacket(
+                "Geo.GetLicense(),",
+                "Geo.GetPlayer(),",
+                "Geo.GetUrl(),",
+                (geopacket) => {
+                    console.log(geopacket)
+                },
+                (err) => {
+                    alert(err)
+                }
+            );
+        })
+    </script>
+</body>
+
+</html>
