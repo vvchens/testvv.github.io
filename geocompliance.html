@@ -135,17 +135,7 @@
 <script type="text/javascript" src="https://vvchens.github.io/geocompliance.js"></script>
 <!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/appgeocheck.php -->
 <!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/spinner.php -->
-<div id="geomodal" >
-<div id="geospinner" class="geoContainer TextCenter">
-  <div class="icon">
-    <img src="/v/1.37.11/d/i/geo/mapsearch.png"  alt="GeoLocation Check" class="MarginCenter" width="150" />  </div>
 
-  <p class="msg">Please wait while your location is verified</p>
-
-  <div class="loading">
-    <img src="/v/1.37.11/d/i/dots_loading.gif"  alt="Loading..." class="MarginCenter" width="75" />  </div>
-</div>
-</div>
 <!--/ /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/spinner.php -->
 
 <script>
@@ -175,7 +165,7 @@
           return;
         }
 
-        Geo.showGeoModal();
+        // Geo.showGeoModal();
 
         // request geolocation
         MdiNativeShell.getGeoPacket(
