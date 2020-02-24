@@ -1,6 +1,7 @@
 <html>
 
 <body>
+    Cordova test page
     <script>
         document.addEventListener("deviceready", () => {
             Cordova.exec((s) => { alert(s); location.reload(); }, null, "MdiNativeShell", "test", []);
