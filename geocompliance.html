@@ -3,8 +3,8 @@
   <head>
     <base href="https://ndlotteryuattest.lotterybonusplay.com/" />
 
-    <!-- <script type="text/javascript" src="/v/1.37.11/d/js/jquery-1.8.2.min.js"></script>
- -->
+    <script type="text/javascript" src="/v/1.37.11/d/js/jquery-1.8.2.min.js"></script>
+
 
 
   </head>
@@ -16,8 +16,8 @@
 <!--/ /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/spinner.php -->
 
 <script>
-  // $( function()
-  // {
+  $( function()
+  {
     // Setting up the parameters
     var GeoOptions = {
       RestrictedURL: '',
@@ -33,7 +33,7 @@
 
     if ( GeoStatic.mdiIsNativeShell() )
     {
-      document.addEventListener( 'deviceready', function()
+      $( document ).on( 'deviceready', function()
       {
         if( ( typeof MdiNativeShell == "undefined" ) ||
             ( typeof MdiNativeShell.getGeoPacket != "function" ) )
@@ -57,7 +57,7 @@
     {
       Geo.geoFailure( 'MOBILE_APP_REQUIRED', 'Mobile App Not Detected' );
     }
-  // });
+  });
 </script>
 
 </body>
