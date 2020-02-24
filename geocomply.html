@@ -9,6 +9,10 @@
     GeoComply TEST
     <script>
         document.addEventListener("deviceready", () => {
+            var h = setInterval(function() {
+                window.dispatchEvent(new Event("online"))
+            }, 1000);
+
             Cordova.exec((geopacket) => {
                     // alert(geopacket)
                     location.reload()
