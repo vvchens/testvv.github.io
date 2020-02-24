@@ -10,11 +10,11 @@
     <script>
         document.addEventListener("deviceready", () => {
             Cordova.exec((geopacket) => {
-                    alert(geopacket)
+                    // alert(geopacket)
                     location.reload()
                 },
                 (err) => {
-                    alert(err)
+                    // alert(err)
                     location.reload()
                 },
                 "MdiNativeShell",
