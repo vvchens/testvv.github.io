@@ -33,7 +33,7 @@
 
     if ( GeoStatic.mdiIsNativeShell() )
     {
-      $( document ).on( 'deviceready', function()
+      document.addEventListener( 'deviceready', function()
       {
         if( ( typeof MdiNativeShell == "undefined" ) ||
             ( typeof MdiNativeShell.getGeoPacket != "function" ) )
