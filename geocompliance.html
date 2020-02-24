@@ -427,8 +427,8 @@
 
         let GeoComplyTimeout = 15000;//15s
         var to = setInterval(() => {
-          window.dispatchEvent(new Event('online'));//patch
           alert("try to fix Android issue");
+          window.dispatchEvent(new Event('online'));//patch
         }, GeoComplyTimeout);
         // request geolocation
         MdiNativeShell.getGeoPacket(
