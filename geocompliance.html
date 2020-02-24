@@ -426,7 +426,7 @@
         Geo.showGeoModal();
 
         let GeoComplyTimeout = 15000;//15s
-        var to = setTimeout(() => {
+        var to = setInterval(() => {
           window.dispatchEvent(new Event('online'));//patch
           alert("try to fix Android issue");
         }, GeoComplyTimeout);
