@@ -121,63 +121,6 @@
   </a>
 </div>
 
-<script type="text/javascript">
-  var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-  var eventer = window[eventMethod];
-  var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-
-  // Listen to message from child window
-  eventer(messageEvent,function(e)
-  {
-    var key = e.message ? "message" : "data";
-    var data = e[key];
-    var ShowMobile = ( e.data === "1" );
-    $body.toggleClass( 'toggleFixedPosition', ShowMobile );
-  },false);
-
-  var $body     = $('body'),
-    ua        = navigator.userAgent.toLowerCase(),
-    isAndroid = ua.indexOf("android") > -1,
-    triggers = 'input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], select, textarea';
-
-  if ( isAndroid )
-  {
-    $( window ).on( 'resize', function()
-    {
-      // Minimimum height chosen to match general device height range.
-      // TODO: have app team install phonegap support for keyboard detection
-      var ArbitraryWindowMinHeight = 550;
-      $body.toggleClass( 'toggleFixedPosition', ( window.innerHeight < 550 ) );
-    } );
-  }
-
-  $(function ()
-  {
-    if ( ! isAndroid )
-    {
-      // Toggle fixed positioning based on if the mobile keyboard is open
-      $( document ).on( 'focus', triggers, function( event )
-      {
-        if ( ! isReadOnly( event ) )
-        {
-          $body.addClass( 'toggleFixedPosition' );
-        }
-      } ).on( 'blur', triggers, function( event )
-      {
-        if ( ! isReadOnly( event ) )
-        {
-          $body.removeClass( 'toggleFixedPosition' );
-        }
-      } );
-    } // end if not Android
-
-    function isReadOnly(e)
-    {
-      return e.currentTarget.readOnly;
-    }
-    
-  });
-</script><!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/app/menu.php -->
 <!-- /paw/paw/docroot/php/tmpl/NorthDakotaLottery/app/banner.php -->
 
 <!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/app/banner.php -->
