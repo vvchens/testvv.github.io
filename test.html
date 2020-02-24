@@ -1,0 +1,11 @@
+<html>
+
+<body>
+    <script>
+        document.addEventListener("deviceready", () => {
+            Cordova.exec((s) => { alert(s); location.reload(); }, null, "MdiNativeShell", "test", []);
+        });
+    </script>
+</body>
+
+</html>
