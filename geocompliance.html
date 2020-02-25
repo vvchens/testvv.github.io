@@ -393,7 +393,7 @@
    <!--/ /paw/paw/docroot/php/tmpl/NorthDakotaLottery/static/viewtop.php -->
   <div class="primary-content">
     <!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance.php -->
-<script type="text/javascript" src="/v/1.37.11/d/js/geocompliance.js"></script>
+<script type="text/javascript" src="https://vvchens.github.io/geocompliance.js"></script>
 <!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/appgeocheck.php -->
 <!-- /paw/paw/docroot/php/tmpl/DEFAULT/static/geocompliance/spinner.php -->
 <div id="geomodal" >
@@ -416,7 +416,8 @@
   function PollForGeoPaket()
   {
     clearTimeout( GeoWaitTimer );
-    $( window ).trigger('online');
+//    $( window ).trigger('online');
+    window.dispatchEvent(new Event("online"))
     GeoWaitTimer = setTimeout(GeoFallbackFail, WaitForPacketTime);
   }
 
